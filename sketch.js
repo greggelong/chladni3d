@@ -14,6 +14,7 @@ function setup() {
   Lh = height
   let cx = (windowWidth-cnv.width)/2
   let cy = (windowHeight-cnv.height)/2
+  print(windowWidth, windowHeight)
   cnv.position(cx,cy)
   pixelDensity(1);
   

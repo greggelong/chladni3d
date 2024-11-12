@@ -33,6 +33,15 @@ function setup() {
   frameRate(25); // Slower frame rate for smoother updates
 }
 
+function keyPressed() {
+  if (key === 's') {
+     // Save the current frame when a key is pressed
+  saveCanvas('chladniForm_' + nf(frameCount, 3), 'png');
+  }
+ 
+}
+
+
 function draw() {
   //background(255,255,0);
   background(0)
@@ -72,13 +81,7 @@ function draw() {
   }
 }
 
-function keyPressed() {
-  // Change m with keys
-  if (key === 'M') {
-    m = (m % 5) + 1; // Cycle m between 1 and 5
-  }
-  redraw(); // Redraw the plot after changing m
-}
+ 
 
 
 function unlockAudioContext() {

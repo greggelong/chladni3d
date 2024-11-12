@@ -51,6 +51,7 @@ function draw() {
   
   // Map the volume to n between 1 and 5 (adjust these numbers to suit your needs)
   n = map(vol, 0, 0.1, 1, 8); // Adjust max volume threshold as needed
+  // change the vol mapping to 0 , 0.5 or 0, 1, to have a less sensitive mic
   //m = map(vol, 0,0.1,1,4)
   // Loop through the grid
   for (let x = 0; x <= Lw; x += resolution) {

@@ -76,7 +76,8 @@ function draw() {
        //fill(0, 255*abs(result))
        fill(255,255,0, 255*abs(result))
        noStroke(); // Set stroke color in HSB mode
-        rect(x, y, resolution,resolution); // Plot points at zero crossing
+       rect(x, y, resolution,resolution); // Plot points at zero crossing
+        //ellipse(x, y, resolution,resolution)
       //}
     }
   }
